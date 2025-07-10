@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/anime-drawing-black.png",
+    "alpha": "100",
+    "special": {
+        "background": "#030406",
+        "foreground": "#d9dad4",
+        "cursor": "#d9dad4"
+    },
+    "colors": {
+        "color0": "#030406",
+        "color1": "#6C716B",
+        "color2": "#7D827B",
+        "color3": "#81857E",
+        "color4": "#90938B",
+        "color5": "#A2A59B",
+        "color6": "#B2B4A9",
+        "color7": "#d9dad4",
+        "color8": "#979894",
+        "color9": "#6C716B",
+        "color10": "#7D827B",
+        "color11": "#81857E",
+        "color12": "#90938B",
+        "color13": "#A2A59B",
+        "color14": "#B2B4A9",
+        "color15": "#d9dad4"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/Colorful-lake.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0c0b",
+        "foreground": "#c6bfa2",
+        "cursor": "#c6bfa2"
+    },
+    "colors": {
+        "color0": "#0a0c0b",
+        "color1": "#6C522C",
+        "color2": "#394247",
+        "color3": "#4D504C",
+        "color4": "#686558",
+        "color5": "#9A5829",
+        "color6": "#A55437",
+        "color7": "#c6bfa2",
+        "color8": "#8a8571",
+        "color9": "#6C522C",
+        "color10": "#394247",
+        "color11": "#4D504C",
+        "color12": "#686558",
+        "color13": "#9A5829",
+        "color14": "#A55437",
+        "color15": "#c6bfa2"
+    }
+}

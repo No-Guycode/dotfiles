@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Coffee-1.png",
+    "alpha": "100",
+    "special": {
+        "background": "#161212",
+        "foreground": "#bab5b7",
+        "cursor": "#bab5b7"
+    },
+    "colors": {
+        "color0": "#161212",
+        "color1": "#75544C",
+        "color2": "#6D6160",
+        "color3": "#834E3B",
+        "color4": "#866050",
+        "color5": "#897670",
+        "color6": "#8F827C",
+        "color7": "#bab5b7",
+        "color8": "#827e80",
+        "color9": "#75544C",
+        "color10": "#6D6160",
+        "color11": "#834E3B",
+        "color12": "#866050",
+        "color13": "#897670",
+        "color14": "#8F827C",
+        "color15": "#bab5b7"
+    }
+}

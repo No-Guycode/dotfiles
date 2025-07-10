@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/mosque.webp",
+    "alpha": "100",
+    "special": {
+        "background": "#080727",
+        "foreground": "#e2acb9",
+        "cursor": "#e2acb9"
+    },
+    "colors": {
+        "color0": "#080727",
+        "color1": "#F06C7A",
+        "color2": "#F7927D",
+        "color3": "#F3BF7C",
+        "color4": "#78619B",
+        "color5": "#B17190",
+        "color6": "#9072A9",
+        "color7": "#e2acb9",
+        "color8": "#9e7881",
+        "color9": "#F06C7A",
+        "color10": "#F7927D",
+        "color11": "#F3BF7C",
+        "color12": "#78619B",
+        "color13": "#B17190",
+        "color14": "#9072A9",
+        "color15": "#e2acb9"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Anime-Girl-Rain.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0c0d",
+        "foreground": "#aec7df",
+        "cursor": "#aec7df"
+    },
+    "colors": {
+        "color0": "#0c0c0d",
+        "color1": "#575367",
+        "color2": "#8E5972",
+        "color3": "#38628D",
+        "color4": "#5B6F8F",
+        "color5": "#A26B97",
+        "color6": "#6B8DA7",
+        "color7": "#aec7df",
+        "color8": "#798b9c",
+        "color9": "#575367",
+        "color10": "#8E5972",
+        "color11": "#38628D",
+        "color12": "#5B6F8F",
+        "color13": "#A26B97",
+        "color14": "#6B8DA7",
+        "color15": "#aec7df"
+    }
+}

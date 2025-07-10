@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/zero-two-and-hiro.png",
+    "alpha": "100",
+    "special": {
+        "background": "#272123",
+        "foreground": "#d8d9db",
+        "cursor": "#d8d9db"
+    },
+    "colors": {
+        "color0": "#272123",
+        "color1": "#918384",
+        "color2": "#918C90",
+        "color3": "#AB9294",
+        "color4": "#A09EA5",
+        "color5": "#B0ABAE",
+        "color6": "#CDAEAA",
+        "color7": "#d8d9db",
+        "color8": "#979799",
+        "color9": "#918384",
+        "color10": "#918C90",
+        "color11": "#AB9294",
+        "color12": "#A09EA5",
+        "color13": "#B0ABAE",
+        "color14": "#CDAEAA",
+        "color15": "#d8d9db"
+    }
+}

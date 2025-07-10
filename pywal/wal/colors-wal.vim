@@ -1,0 +1,23 @@
+" Special
+let wallpaper  = "/home/ahmed/Pictures/wallpapers/night-sky.png"
+let background = "#070C13"
+let foreground = "#8fc8dc"
+let cursor     = "#8fc8dc"
+
+" Colors
+let color0  = "#070C13"
+let color1  = "#2F4B67"
+let color2  = "#504657"
+let color3  = "#92404B"
+let color4  = "#0D2C90"
+let color5  = "#116196"
+let color6  = "#494FB8"
+let color7  = "#8fc8dc"
+let color8  = "#648c9a"
+let color9  = "#2F4B67"
+let color10 = "#504657"
+let color11 = "#92404B"
+let color12 = "#0D2C90"
+let color13 = "#116196"
+let color14 = "#494FB8"
+let color15 = "#8fc8dc"

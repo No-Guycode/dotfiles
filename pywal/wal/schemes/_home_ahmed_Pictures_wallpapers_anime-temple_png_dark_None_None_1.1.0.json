@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/anime-temple.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0b090c",
+        "foreground": "#d0d7df",
+        "cursor": "#d0d7df"
+    },
+    "colors": {
+        "color0": "#0b090c",
+        "color1": "#4E576A",
+        "color2": "#9E5061",
+        "color3": "#57758C",
+        "color4": "#AC768A",
+        "color5": "#6C90A8",
+        "color6": "#7CABC6",
+        "color7": "#d0d7df",
+        "color8": "#91969c",
+        "color9": "#4E576A",
+        "color10": "#9E5061",
+        "color11": "#57758C",
+        "color12": "#AC768A",
+        "color13": "#6C90A8",
+        "color14": "#7CABC6",
+        "color15": "#d0d7df"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Anime-Japan-Street.png",
+    "alpha": "100",
+    "special": {
+        "background": "#150f14",
+        "foreground": "#aca8ba",
+        "cursor": "#aca8ba"
+    },
+    "colors": {
+        "color0": "#150f14",
+        "color1": "#493952",
+        "color2": "#4F3B5F",
+        "color3": "#5D4D5F",
+        "color4": "#AB532A",
+        "color5": "#976558",
+        "color6": "#CA9A57",
+        "color7": "#aca8ba",
+        "color8": "#787582",
+        "color9": "#493952",
+        "color10": "#4F3B5F",
+        "color11": "#5D4D5F",
+        "color12": "#AB532A",
+        "color13": "#976558",
+        "color14": "#CA9A57",
+        "color15": "#aca8ba"
+    }
+}

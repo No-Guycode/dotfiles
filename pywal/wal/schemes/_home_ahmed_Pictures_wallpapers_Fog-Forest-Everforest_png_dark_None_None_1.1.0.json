@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Fog-Forest-Everforest.png",
+    "alpha": "100",
+    "special": {
+        "background": "#1b2125",
+        "foreground": "#d5d1ca",
+        "cursor": "#d5d1ca"
+    },
+    "colors": {
+        "color0": "#1b2125",
+        "color1": "#88857B",
+        "color2": "#989386",
+        "color3": "#A29D8F",
+        "color4": "#B0AA9B",
+        "color5": "#B7B1A1",
+        "color6": "#BAB4A5",
+        "color7": "#d5d1ca",
+        "color8": "#95928d",
+        "color9": "#88857B",
+        "color10": "#989386",
+        "color11": "#A29D8F",
+        "color12": "#B0AA9B",
+        "color13": "#B7B1A1",
+        "color14": "#BAB4A5",
+        "color15": "#d5d1ca"
+    }
+}

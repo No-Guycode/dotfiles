@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Anime-City-Night.png",
+    "alpha": "100",
+    "special": {
+        "background": "#131015",
+        "foreground": "#a9c2d3",
+        "cursor": "#a9c2d3"
+    },
+    "colors": {
+        "color0": "#131015",
+        "color1": "#995136",
+        "color2": "#9B6352",
+        "color3": "#C76845",
+        "color4": "#E69B60",
+        "color5": "#C7A960",
+        "color6": "#3A5E96",
+        "color7": "#a9c2d3",
+        "color8": "#768793",
+        "color9": "#995136",
+        "color10": "#9B6352",
+        "color11": "#C76845",
+        "color12": "#E69B60",
+        "color13": "#C7A960",
+        "color14": "#3A5E96",
+        "color15": "#a9c2d3"
+    }
+}

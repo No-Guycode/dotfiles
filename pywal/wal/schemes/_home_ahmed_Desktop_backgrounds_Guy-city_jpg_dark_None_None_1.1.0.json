@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/Guy-city.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0F162D",
+        "foreground": "#cbe0e7",
+        "cursor": "#cbe0e7"
+    },
+    "colors": {
+        "color0": "#0F162D",
+        "color1": "#2D5F9C",
+        "color2": "#4F6E9C",
+        "color3": "#3079C2",
+        "color4": "#4C9BC9",
+        "color5": "#6CA0CC",
+        "color6": "#8CAACA",
+        "color7": "#cbe0e7",
+        "color8": "#8e9ca1",
+        "color9": "#2D5F9C",
+        "color10": "#4F6E9C",
+        "color11": "#3079C2",
+        "color12": "#4C9BC9",
+        "color13": "#6CA0CC",
+        "color14": "#8CAACA",
+        "color15": "#cbe0e7"
+    }
+}

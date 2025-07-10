@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/anime-rose.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0a0d",
+        "foreground": "#edc6cb",
+        "cursor": "#edc6cb"
+    },
+    "colors": {
+        "color0": "#0c0a0d",
+        "color1": "#3A475D",
+        "color2": "#545468",
+        "color3": "#B34D5C",
+        "color4": "#5B758C",
+        "color5": "#CB7C82",
+        "color6": "#688599",
+        "color7": "#edc6cb",
+        "color8": "#a58a8e",
+        "color9": "#3A475D",
+        "color10": "#545468",
+        "color11": "#B34D5C",
+        "color12": "#5B758C",
+        "color13": "#CB7C82",
+        "color14": "#688599",
+        "color15": "#edc6cb"
+    }
+}

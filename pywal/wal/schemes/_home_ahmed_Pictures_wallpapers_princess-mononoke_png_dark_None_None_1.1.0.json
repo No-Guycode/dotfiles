@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/princess-mononoke.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0e0f",
+        "foreground": "#9ec7bc",
+        "cursor": "#9ec7bc"
+    },
+    "colors": {
+        "color0": "#0b0e0f",
+        "color1": "#1C5246",
+        "color2": "#25504B",
+        "color3": "#256B5B",
+        "color4": "#4E6D59",
+        "color5": "#4E896A",
+        "color6": "#A09D67",
+        "color7": "#9ec7bc",
+        "color8": "#6e8b83",
+        "color9": "#1C5246",
+        "color10": "#25504B",
+        "color11": "#256B5B",
+        "color12": "#4E6D59",
+        "color13": "#4E896A",
+        "color14": "#A09D67",
+        "color15": "#9ec7bc"
+    }
+}

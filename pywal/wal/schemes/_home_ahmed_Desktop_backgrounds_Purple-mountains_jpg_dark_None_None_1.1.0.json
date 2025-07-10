@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/Purple-mountains.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0C040E",
+        "foreground": "#ebb6b5",
+        "cursor": "#ebb6b5"
+    },
+    "colors": {
+        "color0": "#0C040E",
+        "color1": "#744564",
+        "color2": "#9D1B38",
+        "color3": "#D7273A",
+        "color4": "#973352",
+        "color5": "#BE4359",
+        "color6": "#E9585E",
+        "color7": "#ebb6b5",
+        "color8": "#a47f7e",
+        "color9": "#744564",
+        "color10": "#9D1B38",
+        "color11": "#D7273A",
+        "color12": "#973352",
+        "color13": "#BE4359",
+        "color14": "#E9585E",
+        "color15": "#ebb6b5"
+    }
+}

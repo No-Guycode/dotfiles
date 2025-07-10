@@ -1,0 +1,51 @@
+# Backup files
+*.backup
+*~
+.DS_Store
+Thumbs.db
+
+# Logs and caches
+*.log
+**/.cache/
+**/cache/
+**/Cache/
+
+# Personal/sensitive files
+.config/git/config
+.config/gh/
+.config/discord/
+.config/steam/
+.config/unity3d/
+.config/Code/User/settings.json
+.config/Code/User/keybindings.json
+.config/obsidian/
+.gitconfig
+**/*secret*
+**/*password*
+**/tokens/
+**/keys/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+
+# Build artifacts
+target/
+build/
+dist/
+*.o
+*.so
+*.a
+
+# Pywal sensitive info
+pywal/wal/colors-rofi-*
+pywal/wal/colors-wal-*

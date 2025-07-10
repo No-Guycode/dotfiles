@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/forest-masked-guy.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0b0a09",
+        "foreground": "#e7dad3",
+        "cursor": "#e7dad3"
+    },
+    "colors": {
+        "color0": "#0b0a09",
+        "color1": "#976763",
+        "color2": "#D15E54",
+        "color3": "#C98F73",
+        "color4": "#7B7983",
+        "color5": "#A59997",
+        "color6": "#D0B0A7",
+        "color7": "#e7dad3",
+        "color8": "#a19893",
+        "color9": "#976763",
+        "color10": "#D15E54",
+        "color11": "#C98F73",
+        "color12": "#7B7983",
+        "color13": "#A59997",
+        "color14": "#D0B0A7",
+        "color15": "#e7dad3"
+    }
+}

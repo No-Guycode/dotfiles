@@ -1,0 +1,21 @@
+set $wallpaper /home/ahmed/Pictures/wallpapers/night-sky.png
+
+set $background #070C13
+set $foreground #8fc8dc
+
+set $color0 #070C13
+set $color1 #2F4B67
+set $color2 #504657
+set $color3 #92404B
+set $color4 #0D2C90
+set $color5 #116196
+set $color6 #494FB8
+set $color7 #8fc8dc
+set $color8 #648c9a
+set $color9 #2F4B67
+set $color10 #504657
+set $color11 #92404B
+set $color12 #0D2C90
+set $color13 #116196
+set $color14 #494FB8
+set $color15 #8fc8dc

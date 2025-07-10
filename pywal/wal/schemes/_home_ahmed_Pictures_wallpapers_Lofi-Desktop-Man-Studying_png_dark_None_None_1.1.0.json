@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Lofi-Desktop-Man-Studying.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0F7E0E",
+        "foreground": "#f0f3dc",
+        "cursor": "#f0f3dc"
+    },
+    "colors": {
+        "color0": "#0F7E0E",
+        "color1": "#98946A",
+        "color2": "#CDC86A",
+        "color3": "#CCCE89",
+        "color4": "#7D5674",
+        "color5": "#BDC9A0",
+        "color6": "#E7ABA9",
+        "color7": "#f0f3dc",
+        "color8": "#a8aa9a",
+        "color9": "#98946A",
+        "color10": "#CDC86A",
+        "color11": "#CCCE89",
+        "color12": "#7D5674",
+        "color13": "#BDC9A0",
+        "color14": "#E7ABA9",
+        "color15": "#f0f3dc"
+    }
+}

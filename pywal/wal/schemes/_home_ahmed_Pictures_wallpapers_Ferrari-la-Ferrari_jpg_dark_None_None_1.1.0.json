@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Ferrari-la-Ferrari.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#080605",
+        "foreground": "#dfcbce",
+        "cursor": "#dfcbce"
+    },
+    "colors": {
+        "color0": "#080605",
+        "color1": "#92847A",
+        "color2": "#D68C5B",
+        "color3": "#9B719A",
+        "color4": "#A49C93",
+        "color5": "#A39D97",
+        "color6": "#ABA49C",
+        "color7": "#dfcbce",
+        "color8": "#9c8e90",
+        "color9": "#92847A",
+        "color10": "#D68C5B",
+        "color11": "#9B719A",
+        "color12": "#A49C93",
+        "color13": "#A39D97",
+        "color14": "#ABA49C",
+        "color15": "#dfcbce"
+    }
+}

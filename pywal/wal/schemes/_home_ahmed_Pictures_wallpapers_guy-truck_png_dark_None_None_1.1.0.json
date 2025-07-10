@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/guy-truck.png",
+    "alpha": "100",
+    "special": {
+        "background": "#1c0f18",
+        "foreground": "#f5f0e1",
+        "cursor": "#f5f0e1"
+    },
+    "colors": {
+        "color0": "#1c0f18",
+        "color1": "#FBAF53",
+        "color2": "#F1AE67",
+        "color3": "#E3B16E",
+        "color4": "#549EBB",
+        "color5": "#D2AC8C",
+        "color6": "#F8DCA9",
+        "color7": "#f5f0e1",
+        "color8": "#aba89d",
+        "color9": "#FBAF53",
+        "color10": "#F1AE67",
+        "color11": "#E3B16E",
+        "color12": "#549EBB",
+        "color13": "#D2AC8C",
+        "color14": "#F8DCA9",
+        "color15": "#f5f0e1"
+    }
+}

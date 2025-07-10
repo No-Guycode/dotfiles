@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/anime-landscape.png",
+    "alpha": "100",
+    "special": {
+        "background": "#19090c",
+        "foreground": "#e9c1af",
+        "cursor": "#e9c1af"
+    },
+    "colors": {
+        "color0": "#19090c",
+        "color1": "#344753",
+        "color2": "#5D5555",
+        "color3": "#AB5A44",
+        "color4": "#9F6858",
+        "color5": "#79847F",
+        "color6": "#B28573",
+        "color7": "#e9c1af",
+        "color8": "#a3877a",
+        "color9": "#344753",
+        "color10": "#5D5555",
+        "color11": "#AB5A44",
+        "color12": "#9F6858",
+        "color13": "#79847F",
+        "color14": "#B28573",
+        "color15": "#e9c1af"
+    }
+}

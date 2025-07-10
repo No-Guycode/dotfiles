@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/frieren.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0d0d19",
+        "foreground": "#ddcde3",
+        "cursor": "#ddcde3"
+    },
+    "colors": {
+        "color0": "#0d0d19",
+        "color1": "#726DCB",
+        "color2": "#9274B9",
+        "color3": "#DB9D9A",
+        "color4": "#8384C9",
+        "color5": "#AC9DC0",
+        "color6": "#A196DD",
+        "color7": "#ddcde3",
+        "color8": "#9a8f9e",
+        "color9": "#726DCB",
+        "color10": "#9274B9",
+        "color11": "#DB9D9A",
+        "color12": "#8384C9",
+        "color13": "#AC9DC0",
+        "color14": "#A196DD",
+        "color15": "#ddcde3"
+    }
+}

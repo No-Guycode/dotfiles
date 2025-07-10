@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/Cube.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#572d36",
+        "foreground": "#f3e1da",
+        "cursor": "#f3e1da"
+    },
+    "colors": {
+        "color0": "#572d36",
+        "color1": "#E07F6C",
+        "color2": "#DA846F",
+        "color3": "#EC9276",
+        "color4": "#FBA17E",
+        "color5": "#F8AC90",
+        "color6": "#F6C8B6",
+        "color7": "#f3e1da",
+        "color8": "#aa9d98",
+        "color9": "#E07F6C",
+        "color10": "#DA846F",
+        "color11": "#EC9276",
+        "color12": "#FBA17E",
+        "color13": "#F8AC90",
+        "color14": "#F6C8B6",
+        "color15": "#f3e1da"
+    }
+}

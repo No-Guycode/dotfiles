@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Path.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#121a19",
+        "foreground": "#e2eaf0",
+        "cursor": "#e2eaf0"
+    },
+    "colors": {
+        "color0": "#121a19",
+        "color1": "#6D9EC5",
+        "color2": "#99A6AE",
+        "color3": "#96B6C9",
+        "color4": "#BFBEC1",
+        "color5": "#B1CADC",
+        "color6": "#CAD8E3",
+        "color7": "#e2eaf0",
+        "color8": "#9ea3a8",
+        "color9": "#6D9EC5",
+        "color10": "#99A6AE",
+        "color11": "#96B6C9",
+        "color12": "#BFBEC1",
+        "color13": "#B1CADC",
+        "color14": "#CAD8E3",
+        "color15": "#e2eaf0"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/anime-train.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0A050F",
+        "foreground": "#f3d9b3",
+        "cursor": "#f3d9b3"
+    },
+    "colors": {
+        "color0": "#0A050F",
+        "color1": "#5F475E",
+        "color2": "#992D2B",
+        "color3": "#CA4535",
+        "color4": "#A05558",
+        "color5": "#DD6C57",
+        "color6": "#EE956C",
+        "color7": "#f3d9b3",
+        "color8": "#aa977d",
+        "color9": "#5F475E",
+        "color10": "#992D2B",
+        "color11": "#CA4535",
+        "color12": "#A05558",
+        "color13": "#DD6C57",
+        "color14": "#EE956C",
+        "color15": "#f3d9b3"
+    }
+}

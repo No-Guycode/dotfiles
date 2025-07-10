@@ -1,0 +1,55 @@
+;; Variables for music control
+(defpoll music_status :interval "1s" "rhythmbox-client --print-playing-format '%ta - %tt' 2>/dev/null || echo 'Not Playing'")
+(defpoll is_playing :interval "1s" "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.rhythmbox /org/mpris/MediaPlayer2 org.freedesktop.DBus.Properties.Get string:org.mpris.MediaPlayer2.Player string:PlaybackStatus 2>/dev/null | grep -q 'Playing' && echo 'true' || echo 'false'")
+
+;; Music control widget
+(defwidget music_control []
+  (box :class "music-control"
+       :orientation "v"
+       :space-evenly false
+       :spacing 8
+    (box :class "control-buttons"
+         :orientation "h"
+         :space-evenly false
+         :spacing 40
+         :halign "center"
+      (button :class "prev-btn"
+              :onclick "rhythmbox-client --previous"
+        (label :text "⏮"))
+      (button :class "play-pause-btn"
+              :onclick "rhythmbox-client --import-folder /home/ahmed/Music; rhythmbox-client --play-pause"
+        (label :text {is_playing == "true" ? "⏸" : "▶"}))
+      (button :class "next-btn"
+              :onclick "rhythmbox-client --next"
+        (label :text "⏭")))
+    (label :class "music-status"
+           :text music_status
+           :limit-width 40
+           :wrap true)))
+
+;; Clock widget
+(defwidget clock []
+  (box :class "clock-container" 
+       :orientation "v" 
+       :space-evenly false 
+       :halign "center" 
+       :valign "top"
+    (label :class "day" 
+           :text {formattime(EWW_TIME, "%A")})
+    (label :class "time" 
+           :text {formattime(EWW_TIME, "%I:%M:%S %p")})
+    (label :class "date" 
+           :text {formattime(EWW_TIME, "%d/%m/%Y")})
+    ;; Add music control below the clock
+    (box :class "music-wrapper"
+         :vexpand false
+         :valign "start"
+      (music_control))))
+
+(defwindow clock
+  :monitor 0
+  :geometry (geometry :x "0%" :y "0%" :width "100%" :height "100%")
+  :stacking "bg"
+  :windowtype "desktop"
+  :focusable false
+  (clock))

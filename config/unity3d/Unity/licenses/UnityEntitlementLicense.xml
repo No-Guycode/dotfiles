@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <License Id="Terms" IssueDate="2025-05-18T03:58:56.390Z" Version="1.0">
+    <EntitlementGroups>
+      <EntitlementGroup Id="18966991112494-UnityPersonal" Namespace="unity_editor" Product="Unity Personal" SubsGroup="Unity Editor" Tag="UnityPersonal" Type="EDITOR">
+        <Context>
+          <User Id="18966991112494" />
+          <StartDate>2020-12-22T15:45:04Z</StartDate>
+          <UpdateDate>2025-06-17T03:58:56.390Z</UpdateDate>
+          <Identifiers>
+            <Identifier Id="05e93654869e46c0b0ecd4a1bd4963cb" Type="Legacy.MachineBinding1" />
+            <Identifier Id="05e93654869e46c0b0ecd4a1bd4963cb" Type="Legacy.MachineBinding2" />
+          </Identifiers>
+        </Context>
+        <Entitlements>
+          <Entitlement Id="com.unity.editor" />
+          <Entitlement Id="com.unity.editor.ui" />
+          <Entitlement Id="com.unity.editor.headless" />
+          <Entitlement Id="com.unity.editor.dark-skin" />
+          <Entitlement Id="com.unity.editor.legacy.team-license" />
+          <Entitlement Id="com.unity.editor.platforms.android" />
+          <Entitlement Id="com.unity.editor.platforms.ios" />
+          <Entitlement Id="com.unity.editor.platforms.uwp" />
+        </Entitlements>
+      </EntitlementGroup>
+    </EntitlementGroups>
+  </License>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315#WithComments" />
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+      <Reference URI="#Terms">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+        <DigestValue>NIr7h7HuI+dHN8WF+zyoITf12UPy/WInkabv9b+5Bfo=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>vWMh9Irm1gGcXjiv5r6gw0Og4ySnB1sAc0k4fWo5GIKXAfh/0IEnrIPaj2F4nRghCpTODOmEOy0h
+2Q3QoMdYhLZ6qLPFRpsJs36r/9d+UJgVU9woQRb1OcMhaOhud8VEbpPLuGK4yE8dOodB11+3JoEF
+SzeVH2HZ1naZEaiU/Pvkqr0RFoRSuo35vQxLpUfa6DCzjO6QyZ0A9KPxLOWRDKn8Dp/CHJzyaGVZ
+4wH6fD/HkiGYOJmtk8Kv4j0hsPbbfixSghh8kSxugxOLYTrHxZguLK1uN/lr1Y/F1vIGeNU892qu
+7ZSOpYE1pUnjjgiNOnaxyR3M4sEgT26SGFsATQ==</SignatureValue>
+  </Signature>
+</root>

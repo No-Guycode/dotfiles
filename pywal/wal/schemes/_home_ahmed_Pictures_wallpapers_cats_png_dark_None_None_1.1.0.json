@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/cats.png",
+    "alpha": "100",
+    "special": {
+        "background": "#121015",
+        "foreground": "#d3dbe4",
+        "cursor": "#d3dbe4"
+    },
+    "colors": {
+        "color0": "#121015",
+        "color1": "#E6887C",
+        "color2": "#677491",
+        "color3": "#A17885",
+        "color4": "#738AAC",
+        "color5": "#A095A5",
+        "color6": "#DF9997",
+        "color7": "#d3dbe4",
+        "color8": "#93999f",
+        "color9": "#E6887C",
+        "color10": "#677491",
+        "color11": "#A17885",
+        "color12": "#738AAC",
+        "color13": "#A095A5",
+        "color14": "#DF9997",
+        "color15": "#d3dbe4"
+    }
+}

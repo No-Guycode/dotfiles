@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/blue-archive-coast.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0d1321",
+        "foreground": "#c4bbba",
+        "cursor": "#c4bbba"
+    },
+    "colors": {
+        "color0": "#0d1321",
+        "color1": "#4D5370",
+        "color2": "#655F72",
+        "color3": "#8F7479",
+        "color4": "#395783",
+        "color5": "#5C6788",
+        "color6": "#8D7987",
+        "color7": "#c4bbba",
+        "color8": "#898282",
+        "color9": "#4D5370",
+        "color10": "#655F72",
+        "color11": "#8F7479",
+        "color12": "#395783",
+        "color13": "#5C6788",
+        "color14": "#8D7987",
+        "color15": "#c4bbba"
+    }
+}

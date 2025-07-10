@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Sunset-room.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0403",
+        "foreground": "#f5dab1",
+        "cursor": "#f5dab1"
+    },
+    "colors": {
+        "color0": "#0c0403",
+        "color1": "#994F32",
+        "color2": "#AA472B",
+        "color3": "#A85C4E",
+        "color4": "#E27250",
+        "color5": "#F38858",
+        "color6": "#F79C64",
+        "color7": "#f5dab1",
+        "color8": "#ab987b",
+        "color9": "#994F32",
+        "color10": "#AA472B",
+        "color11": "#A85C4E",
+        "color12": "#E27250",
+        "color13": "#F38858",
+        "color14": "#F79C64",
+        "color15": "#f5dab1"
+    }
+}

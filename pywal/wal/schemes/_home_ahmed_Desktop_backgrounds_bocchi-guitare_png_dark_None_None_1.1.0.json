@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/bocchi-guitare.png",
+    "alpha": "100",
+    "special": {
+        "background": "#12130e",
+        "foreground": "#e6c4c7",
+        "cursor": "#e6c4c7"
+    },
+    "colors": {
+        "color0": "#12130e",
+        "color1": "#A1744F",
+        "color2": "#A06169",
+        "color3": "#6C8370",
+        "color4": "#9A9A69",
+        "color5": "#CBC370",
+        "color6": "#C67A87",
+        "color7": "#e6c4c7",
+        "color8": "#a1898b",
+        "color9": "#A1744F",
+        "color10": "#A06169",
+        "color11": "#6C8370",
+        "color12": "#9A9A69",
+        "color13": "#CBC370",
+        "color14": "#C67A87",
+        "color15": "#e6c4c7"
+    }
+}

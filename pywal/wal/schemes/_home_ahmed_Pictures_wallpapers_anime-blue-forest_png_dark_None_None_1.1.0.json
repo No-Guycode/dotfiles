@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/anime-blue-forest.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c1722",
+        "foreground": "#dfebed",
+        "cursor": "#dfebed"
+    },
+    "colors": {
+        "color0": "#0c1722",
+        "color1": "#498FAA",
+        "color2": "#5F94AB",
+        "color3": "#74B4C9",
+        "color4": "#8BAAB8",
+        "color5": "#8DB8C9",
+        "color6": "#A5D6E1",
+        "color7": "#dfebed",
+        "color8": "#9ca4a5",
+        "color9": "#498FAA",
+        "color10": "#5F94AB",
+        "color11": "#74B4C9",
+        "color12": "#8BAAB8",
+        "color13": "#8DB8C9",
+        "color14": "#A5D6E1",
+        "color15": "#dfebed"
+    }
+}

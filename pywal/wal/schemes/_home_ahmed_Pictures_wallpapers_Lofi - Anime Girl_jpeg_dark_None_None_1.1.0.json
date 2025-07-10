@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Lofi - Anime Girl.jpeg",
+    "alpha": "100",
+    "special": {
+        "background": "#100f14",
+        "foreground": "#e7eee9",
+        "cursor": "#e7eee9"
+    },
+    "colors": {
+        "color0": "#100f14",
+        "color1": "#D9AB67",
+        "color2": "#2F6F91",
+        "color3": "#6093A7",
+        "color4": "#3BA5C5",
+        "color5": "#A4BBBD",
+        "color6": "#F1DFA9",
+        "color7": "#e7eee9",
+        "color8": "#a1a6a3",
+        "color9": "#D9AB67",
+        "color10": "#2F6F91",
+        "color11": "#6093A7",
+        "color12": "#3BA5C5",
+        "color13": "#A4BBBD",
+        "color14": "#F1DFA9",
+        "color15": "#e7eee9"
+    }
+}

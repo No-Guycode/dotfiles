@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/guitar.png",
+    "alpha": "100",
+    "special": {
+        "background": "#060A0A",
+        "foreground": "#dfd0c6",
+        "cursor": "#dfd0c6"
+    },
+    "colors": {
+        "color0": "#060A0A",
+        "color1": "#334A48",
+        "color2": "#605E54",
+        "color3": "#976C5A",
+        "color4": "#B46449",
+        "color5": "#C68F72",
+        "color6": "#768887",
+        "color7": "#dfd0c6",
+        "color8": "#9c918a",
+        "color9": "#334A48",
+        "color10": "#605E54",
+        "color11": "#976C5A",
+        "color12": "#B46449",
+        "color13": "#C68F72",
+        "color14": "#768887",
+        "color15": "#dfd0c6"
+    }
+}

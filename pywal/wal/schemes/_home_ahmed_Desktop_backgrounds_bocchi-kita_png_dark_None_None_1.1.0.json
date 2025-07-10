@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/bocchi-kita.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0E1512",
+        "foreground": "#e4e9c9",
+        "cursor": "#e4e9c9"
+    },
+    "colors": {
+        "color0": "#0E1512",
+        "color1": "#609A30",
+        "color2": "#68A054",
+        "color3": "#96A061",
+        "color4": "#AECD55",
+        "color5": "#63759C",
+        "color6": "#B0B89B",
+        "color7": "#e4e9c9",
+        "color8": "#9fa38c",
+        "color9": "#609A30",
+        "color10": "#68A054",
+        "color11": "#96A061",
+        "color12": "#AECD55",
+        "color13": "#63759C",
+        "color14": "#B0B89B",
+        "color15": "#e4e9c9"
+    }
+}

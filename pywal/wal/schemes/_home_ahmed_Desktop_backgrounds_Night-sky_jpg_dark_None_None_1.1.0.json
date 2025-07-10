@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/Night-sky.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0A1733",
+        "foreground": "#9ac7cd",
+        "cursor": "#9ac7cd"
+    },
+    "colors": {
+        "color0": "#0A1733",
+        "color1": "#9B7572",
+        "color2": "#D69276",
+        "color3": "#013981",
+        "color4": "#1C648B",
+        "color5": "#557588",
+        "color6": "#847E81",
+        "color7": "#9ac7cd",
+        "color8": "#6b8b8f",
+        "color9": "#9B7572",
+        "color10": "#D69276",
+        "color11": "#013981",
+        "color12": "#1C648B",
+        "color13": "#557588",
+        "color14": "#847E81",
+        "color15": "#9ac7cd"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Backyard.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0e1020",
+        "foreground": "#b0bbc5",
+        "cursor": "#b0bbc5"
+    },
+    "colors": {
+        "color0": "#0e1020",
+        "color1": "#5B5761",
+        "color2": "#8A6F63",
+        "color3": "#A08A78",
+        "color4": "#313F80",
+        "color5": "#305087",
+        "color6": "#556C8D",
+        "color7": "#b0bbc5",
+        "color8": "#7b8289",
+        "color9": "#5B5761",
+        "color10": "#8A6F63",
+        "color11": "#A08A78",
+        "color12": "#313F80",
+        "color13": "#305087",
+        "color14": "#556C8D",
+        "color15": "#b0bbc5"
+    }
+}

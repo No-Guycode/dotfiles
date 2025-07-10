@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Abstract - Nature.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#120c0a",
+        "foreground": "#d2dade",
+        "cursor": "#d2dade"
+    },
+    "colors": {
+        "color0": "#120c0a",
+        "color1": "#A3906F",
+        "color2": "#6D7585",
+        "color3": "#768A91",
+        "color4": "#9A9DA1",
+        "color5": "#C9BDAB",
+        "color6": "#9AB8C6",
+        "color7": "#d2dade",
+        "color8": "#93989b",
+        "color9": "#A3906F",
+        "color10": "#6D7585",
+        "color11": "#768A91",
+        "color12": "#9A9DA1",
+        "color13": "#C9BDAB",
+        "color14": "#9AB8C6",
+        "color15": "#d2dade"
+    }
+}

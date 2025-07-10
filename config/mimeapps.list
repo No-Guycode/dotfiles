@@ -1,0 +1,17 @@
+[Default Applications]
+text/html=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/about=firefox.desktop
+x-scheme-handler/unknown=firefox.desktop
+inode/directory=thunar.desktop
+application/x-wayland-gnome-saved-search=thunar.desktop
+video/x-matroska=vlc.desktop
+video/mp4=vlc.desktop
+
+[Added Associations]
+application/x-shellscript=micro.desktop;vim.desktop;org.x.editor.desktop;
+video/x-matroska=vlc.desktop;
+text/html=micro.desktop;
+audio/mpeg=org.gnome.Rhythmbox3.desktop;
+video/mp4=vlc.desktop;

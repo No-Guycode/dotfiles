@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/desert-village.png",
+    "alpha": "100",
+    "special": {
+        "background": "#020A18",
+        "foreground": "#b3b9c2",
+        "cursor": "#b3b9c2"
+    },
+    "colors": {
+        "color0": "#020A18",
+        "color1": "#414D5D",
+        "color2": "#435C72",
+        "color3": "#4D647A",
+        "color4": "#636E7D",
+        "color5": "#5A6E81",
+        "color6": "#6C7B8C",
+        "color7": "#b3b9c2",
+        "color8": "#7d8187",
+        "color9": "#414D5D",
+        "color10": "#435C72",
+        "color11": "#4D647A",
+        "color12": "#636E7D",
+        "color13": "#5A6E81",
+        "color14": "#6C7B8C",
+        "color15": "#b3b9c2"
+    }
+}

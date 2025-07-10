@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/anime-city-view.png",
+    "alpha": "100",
+    "special": {
+        "background": "#090a0d",
+        "foreground": "#b2b6ba",
+        "cursor": "#b2b6ba"
+    },
+    "colors": {
+        "color0": "#090a0d",
+        "color1": "#334354",
+        "color2": "#2C4B67",
+        "color3": "#4E4C52",
+        "color4": "#696365",
+        "color5": "#8C766F",
+        "color6": "#9D847A",
+        "color7": "#b2b6ba",
+        "color8": "#7c7f82",
+        "color9": "#334354",
+        "color10": "#2C4B67",
+        "color11": "#4E4C52",
+        "color12": "#696365",
+        "color13": "#8C766F",
+        "color14": "#9D847A",
+        "color15": "#b2b6ba"
+    }
+}

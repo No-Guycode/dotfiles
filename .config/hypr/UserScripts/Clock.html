@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimalist Clock</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: transparent !important;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Space Mono', monospace;
+            color: #ffffff;
+            overflow: hidden;
+        }
+
+        .clock-container {
+            text-align: center;
+            user-select: none;
+            animation: fadeIn 1s ease-in;
+        }
+
+        .day {
+            font-family: 'Orbitron', monospace;
+            font-weight: 900;
+            font-size: clamp(4rem, 15vw, 12rem);
+            letter-spacing: -0.05em;
+            margin-bottom: 0.2em;
+            background: linear-gradient(45deg, #ffffff, #cccccc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        .time {
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            font-size: clamp(2rem, 8vw, 4rem);
+            margin-bottom: 0.3em;
+            color: #f0f0f0;
+            letter-spacing: 0.1em;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .date {
+            font-family: 'Space Mono', monospace;
+            font-weight: 400;
+            font-size: clamp(1.2rem, 4vw, 2rem);
+            color: #b0b0b0;
+            letter-spacing: 0.05em;
+            opacity: 0.9;
+        }
+
+        .separator {
+            display: inline-block;
+            animation: blink 1s infinite;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 20px rgba(255, 255, 255, 0.2); }
+            to { text-shadow: 0 0 40px rgba(255, 255, 255, 0.4); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .day {
+                margin-bottom: 0.1em;
+            }
+            .time {
+                margin-bottom: 0.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-container">
+        <div class="day" id="day"></div>
+        <div class="time" id="time"></div>
+        <div class="date" id="date"></div>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            
+            // Day of week
+            const days = ['SUNDAY', 'MONDAY', 'TUESDAY', 'WEDNESDAY', 'THURSDAY', 'FRIDAY', 'SATURDAY'];
+            const dayElement = document.getElementById('day');
+            dayElement.textContent = days[now.getDay()];
+            
+            // Time in 12-hour format
+            let hours = now.getHours();
+            const minutes = now.getMinutes().toString().padStart(2, '0');
+            const seconds = now.getSeconds().toString().padStart(2, '0');
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            
+            hours = hours % 12;
+            hours = hours ? hours : 12; // 0 should be 12
+            hours = hours.toString().padStart(2, '0');
+            
+            const timeElement = document.getElementById('time');
+            timeElement.innerHTML = `${hours}<span class="separator">:</span>${minutes}<span class="separator">:</span>${seconds} ${ampm}`;
+            
+            // Date in DD/MM/YYYY format
+            const day = now.getDate().toString();
+            const month = (now.getMonth() + 1).toString();
+            const year = now.getFullYear();
+            
+            const dateElement = document.getElementById('date');
+            dateElement.textContent = `${day}/${month}/${year}`;
+        }
+        
+        // Update immediately and then every second
+        updateClock();
+        setInterval(updateClock, 1000);
+        
+        // Smooth entrance animation on load
+        window.addEventListener('load', () => {
+            document.body.style.opacity = '1';
+        });
+    </script>
+</body>
+</html>

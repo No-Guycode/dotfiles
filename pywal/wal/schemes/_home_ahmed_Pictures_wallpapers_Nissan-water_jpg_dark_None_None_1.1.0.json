@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Nissan-water.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0a0b",
+        "foreground": "#c9dae2",
+        "cursor": "#c9dae2"
+    },
+    "colors": {
+        "color0": "#0a0a0b",
+        "color1": "#3A62BD",
+        "color2": "#5A7291",
+        "color3": "#787F82",
+        "color4": "#668FA0",
+        "color5": "#53A1CD",
+        "color6": "#979FA4",
+        "color7": "#c9dae2",
+        "color8": "#8c989e",
+        "color9": "#3A62BD",
+        "color10": "#5A7291",
+        "color11": "#787F82",
+        "color12": "#668FA0",
+        "color13": "#53A1CD",
+        "color14": "#979FA4",
+        "color15": "#c9dae2"
+    }
+}

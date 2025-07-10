@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Anime-Purple-eyes.png",
+    "alpha": "100",
+    "special": {
+        "background": "#020104",
+        "foreground": "#d6a8e2",
+        "cursor": "#d6a8e2"
+    },
+    "colors": {
+        "color0": "#020104",
+        "color1": "#3F2D81",
+        "color2": "#4C3591",
+        "color3": "#5B3CA1",
+        "color4": "#5E48A5",
+        "color5": "#7850C7",
+        "color6": "#965ADD",
+        "color7": "#d6a8e2",
+        "color8": "#95759e",
+        "color9": "#3F2D81",
+        "color10": "#4C3591",
+        "color11": "#5B3CA1",
+        "color12": "#5E48A5",
+        "color13": "#7850C7",
+        "color14": "#965ADD",
+        "color15": "#d6a8e2"
+    }
+}

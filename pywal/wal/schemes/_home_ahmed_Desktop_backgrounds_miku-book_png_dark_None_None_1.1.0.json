@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/miku-book.png",
+    "alpha": "100",
+    "special": {
+        "background": "#121620",
+        "foreground": "#e1ddd1",
+        "cursor": "#e1ddd1"
+    },
+    "colors": {
+        "color0": "#121620",
+        "color1": "#6A8D6F",
+        "color2": "#969A7A",
+        "color3": "#597885",
+        "color4": "#709296",
+        "color5": "#9EA79C",
+        "color6": "#BABFB2",
+        "color7": "#e1ddd1",
+        "color8": "#9d9a92",
+        "color9": "#6A8D6F",
+        "color10": "#969A7A",
+        "color11": "#597885",
+        "color12": "#709296",
+        "color13": "#9EA79C",
+        "color14": "#BABFB2",
+        "color15": "#e1ddd1"
+    }
+}

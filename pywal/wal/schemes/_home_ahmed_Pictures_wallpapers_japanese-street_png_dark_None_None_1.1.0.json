@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/japanese-street.png",
+    "alpha": "100",
+    "special": {
+        "background": "#3a2227",
+        "foreground": "#d5cae4",
+        "cursor": "#d5cae4"
+    },
+    "colors": {
+        "color0": "#3a2227",
+        "color1": "#987889",
+        "color2": "#6F85CF",
+        "color3": "#B098A0",
+        "color4": "#D6A193",
+        "color5": "#EBAF8E",
+        "color6": "#EECCA7",
+        "color7": "#d5cae4",
+        "color8": "#958d9f",
+        "color9": "#987889",
+        "color10": "#6F85CF",
+        "color11": "#B098A0",
+        "color12": "#D6A193",
+        "color13": "#EBAF8E",
+        "color14": "#EECCA7",
+        "color15": "#d5cae4"
+    }
+}

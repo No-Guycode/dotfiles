@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Fantasy-Mountain.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0a0c09",
+        "foreground": "#e1e5ec",
+        "cursor": "#e1e5ec"
+    },
+    "colors": {
+        "color0": "#0a0c09",
+        "color1": "#81787B",
+        "color2": "#396B85",
+        "color3": "#5B768A",
+        "color4": "#708CA0",
+        "color5": "#7EA3C2",
+        "color6": "#9AACBD",
+        "color7": "#e1e5ec",
+        "color8": "#9da0a5",
+        "color9": "#81787B",
+        "color10": "#396B85",
+        "color11": "#5B768A",
+        "color12": "#708CA0",
+        "color13": "#7EA3C2",
+        "color14": "#9AACBD",
+        "color15": "#e1e5ec"
+    }
+}

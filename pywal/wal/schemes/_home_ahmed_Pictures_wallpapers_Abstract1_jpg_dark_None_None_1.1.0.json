@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Abstract1.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#06070A",
+        "foreground": "#a3c3e1",
+        "cursor": "#a3c3e1"
+    },
+    "colors": {
+        "color0": "#06070A",
+        "color1": "#604D5F",
+        "color2": "#986755",
+        "color3": "#CF9A61",
+        "color4": "#295A98",
+        "color5": "#566A9F",
+        "color6": "#8F7690",
+        "color7": "#a3c3e1",
+        "color8": "#72889d",
+        "color9": "#604D5F",
+        "color10": "#986755",
+        "color11": "#CF9A61",
+        "color12": "#295A98",
+        "color13": "#566A9F",
+        "color14": "#8F7690",
+        "color15": "#a3c3e1"
+    }
+}

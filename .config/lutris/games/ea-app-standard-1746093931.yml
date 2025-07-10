@@ -1,0 +1,48 @@
+game:
+  exe: drive_c/Program Files/Electronic Arts/EA Desktop/EA Desktop/EALauncher.exe
+  prefix: /home/ahmed/Games/ea-app
+game_slug: ea-app
+name: EA App
+requires: null
+script:
+  files:
+  - setup: https://origin-a.akamaihd.net/EA-Desktop-Client-Download/installer-releases/EAappInstaller.exe
+  game:
+    exe: drive_c/Program Files/Electronic Arts/EA Desktop/EA Desktop/EALauncher.exe
+    prefix: $GAMEDIR
+  installer:
+  - task:
+      arch: win64
+      prefix: /home/ahmed/Games/ea-app
+      wine_path: /home/ahmed/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      app: corefonts
+      arch: win64
+      prefix: /home/ahmed/Games/ea-app
+      wine_path: /home/ahmed/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      app: win10
+      arch: win64
+      prefix: /home/ahmed/Games/ea-app
+      wine_path: /home/ahmed/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+  - task:
+      arch: win64
+      args: EAX_LAUNCH_CLIENT=0
+      env: {}
+      executable: /home/ahmed/.cache/lutris/installer/ea-app/setup/EAappInstaller.exe
+      prefix: /home/ahmed/Games/ea-app
+      wine_path: /home/ahmed/.local/share/lutris/runners/wine/wine-ge-8-26-x86_64/bin/wine
+slug: ea-app-standard
+system:
+  env:
+    DXVK_ASYNC: '1'
+    DXVK_HUD: '1'
+    GAMEMODERUN: '1'
+    RADV_PERFTEST: aco
+  locale: ''
+variables: {}
+version: Standard
+wine:
+  eac: true
+  version: wine-ge-8-26-x86_64
+year: 2022

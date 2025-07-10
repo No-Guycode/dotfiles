@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/Anime-Girl3.png",
+    "alpha": "100",
+    "special": {
+        "background": "#040D16",
+        "foreground": "#bfd9d7",
+        "cursor": "#bfd9d7"
+    },
+    "colors": {
+        "color0": "#040D16",
+        "color1": "#CC9A60",
+        "color2": "#F6D175",
+        "color3": "#8C7982",
+        "color4": "#6DB8BF",
+        "color5": "#E3B0A1",
+        "color6": "#F3D5B5",
+        "color7": "#bfd9d7",
+        "color8": "#859796",
+        "color9": "#CC9A60",
+        "color10": "#F6D175",
+        "color11": "#8C7982",
+        "color12": "#6DB8BF",
+        "color13": "#E3B0A1",
+        "color14": "#F3D5B5",
+        "color15": "#bfd9d7"
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Desktop/backgrounds/desolated-boat.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0c0b1b",
+        "foreground": "#d0c7d4",
+        "cursor": "#d0c7d4"
+    },
+    "colors": {
+        "color0": "#0c0b1b",
+        "color1": "#5B2543",
+        "color2": "#C63749",
+        "color3": "#F55763",
+        "color4": "#36549A",
+        "color5": "#E37886",
+        "color6": "#6196CA",
+        "color7": "#d0c7d4",
+        "color8": "#918b94",
+        "color9": "#5B2543",
+        "color10": "#C63749",
+        "color11": "#F55763",
+        "color12": "#36549A",
+        "color13": "#E37886",
+        "color14": "#6196CA",
+        "color15": "#d0c7d4"
+    }
+}

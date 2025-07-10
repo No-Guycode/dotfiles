@@ -1,0 +1,78 @@
+* {
+  all: unset;
+}
+.clock-container {
+  background: transparent;
+  font-family: "Space Mono", monospace;
+}
+.day {
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  font-size: 120px;
+  margin-bottom: 20px;
+}
+.time {
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+.date {
+  font-family: "Space Mono", monospace;
+  font-size: 32px;
+}
+/* Soundbars styling - waybar style pink bars */
+.soundbars-wrapper {
+  margin-top: 30px;
+}
+.soundbars-container {
+  /* GTK box containers automatically handle flex-like behavior */
+}
+.soundbar {
+  min-width: 4px;
+  min-height: 40px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.bar-fill {
+  background-color: #ff79c6;  /* Pink like waybar */
+  border-radius: 2px;
+  min-width: 4px;
+  transition: 100ms ease-out;
+}
+
+/* Music control styling */
+.music-wrapper {
+  margin-top: 25px;
+}
+
+.play-pause-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  color: #ff79c6;
+}
+
+.play-pause-btn:hover {
+  color: #ff92d4;
+}
+
+.prev-btn, .next-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 32px;
+  color: #ff79c6;
+}
+
+.prev-btn:hover, .next-btn:hover {
+  color: #ff92d4;
+}
+
+.music-status {
+  font-family: "Space Mono", monospace;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  min-height: 20px;
+}

@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/home/ahmed/Pictures/wallpapers/mysterious-alley.png",
+    "alpha": "100",
+    "special": {
+        "background": "#0f090b",
+        "foreground": "#b9b8ba",
+        "cursor": "#b9b8ba"
+    },
+    "colors": {
+        "color0": "#0f090b",
+        "color1": "#6E2D2B",
+        "color2": "#4B3E42",
+        "color3": "#62545A",
+        "color4": "#962A26",
+        "color5": "#EE332A",
+        "color6": "#B5574F",
+        "color7": "#b9b8ba",
+        "color8": "#818082",
+        "color9": "#6E2D2B",
+        "color10": "#4B3E42",
+        "color11": "#62545A",
+        "color12": "#962A26",
+        "color13": "#EE332A",
+        "color14": "#B5574F",
+        "color15": "#b9b8ba"
+    }
+}

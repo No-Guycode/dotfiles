@@ -1,0 +1,27 @@
+{
+    "wallpaper": "/usr/share/backgrounds/linuxmint/default_background.jpg",
+    "alpha": "100",
+    "special": {
+        "background": "#060606",
+        "foreground": "#dedede",
+        "cursor": "#dedede"
+    },
+    "colors": {
+        "color0": "#060606",
+        "color1": "#333333",
+        "color2": "#3B3B3B",
+        "color3": "#464646",
+        "color4": "#565656",
+        "color5": "#646464",
+        "color6": "#A7A7A7",
+        "color7": "#dedede",
+        "color8": "#9b9b9b",
+        "color9": "#333333",
+        "color10": "#3B3B3B",
+        "color11": "#464646",
+        "color12": "#565656",
+        "color13": "#646464",
+        "color14": "#A7A7A7",
+        "color15": "#dedede"
+    }
+}

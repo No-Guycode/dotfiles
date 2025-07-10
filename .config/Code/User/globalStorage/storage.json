@@ -1,0 +1,86 @@
+{
+    "telemetry.sqmId": "",
+    "telemetry.machineId": "5994c4fdc67ae72958fa13b8b46f7fb5bd8bbaa338ee06ccedae73ac94e2f05d",
+    "telemetry.devDeviceId": "cfae8d26-36f6-4df9-845d-2ce9b4fa99d6",
+    "backupWorkspaces": {
+        "workspaces": [],
+        "folders": [
+            {
+                "folderUri": "file:///home/ahmed/CodeStuff/html"
+            },
+            {
+                "folderUri": "file:///home/ahmed/CodeStuff/python"
+            }
+        ],
+        "emptyWindows": []
+    },
+    "windowControlHeight": 42,
+    "profileAssociations": {
+        "workspaces": {
+            "file:///home/ahmed/CodeStuff/html": "__default__profile__",
+            "file:///home/ahmed/CodeStuff/python": "__default__profile__"
+        },
+        "emptyWindows": {}
+    },
+    "theme": "vs-dark",
+    "themeBackground": "#080e17",
+    "windowSplash": {
+        "zoomLevel": 0,
+        "baseTheme": "vs-dark",
+        "colorInfo": {
+            "foreground": "rgba(143, 200, 220, 0.6)",
+            "background": "#080e17",
+            "editorBackground": "#080e17",
+            "titleBarBackground": "#070c13",
+            "titleBarBorder": "rgba(100, 140, 154, 0.2)",
+            "activityBarBackground": "#070c13",
+            "activityBarBorder": "rgba(100, 140, 154, 0.2)",
+            "sideBarBackground": "#070c13",
+            "sideBarBorder": "rgba(100, 140, 154, 0.2)",
+            "statusBarBackground": "#070c13",
+            "statusBarBorder": "rgba(100, 140, 154, 0.2)",
+            "statusBarNoFolderBackground": "#080e17"
+        },
+        "layoutInfo": {
+            "sideBarSide": "left",
+            "editorPartMinWidth": 220,
+            "titleBarHeight": 35,
+            "activityBarWidth": 48,
+            "sideBarWidth": 237,
+            "auxiliarySideBarWidth": 0,
+            "statusBarHeight": 22,
+            "windowBorder": false
+        }
+    },
+    "windowsState": {
+        "lastActiveWindow": {
+            "folder": "file:///home/ahmed/CodeStuff/python",
+            "backupPath": "/home/ahmed/.config/Code/Backups/2bae0bd5680932691dc4c5134f06a2d2",
+            "uiState": {
+                "mode": 0,
+                "x": 0,
+                "y": 0,
+                "width": 960,
+                "height": 1043,
+                "zoomLevel": 1
+            }
+        },
+        "openedWindows": []
+    },
+    "windowSplashWorkspaceOverride": {
+        "layoutInfo": {
+            "sideBarWidth": 237,
+            "auxiliaryBarWidth": 300,
+            "workspaces": {
+                "77c33baf6159e7bba1f7e33b110ab09a": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                },
+                "84d425f8d29aef14c4723f32073dc057": {
+                    "sideBarVisible": true,
+                    "auxiliaryBarVisible": false
+                }
+            }
+        }
+    }
+}
