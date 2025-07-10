@@ -8,12 +8,11 @@ My personal dotfiles for Hyprland on Linux Mint with all essential apps and them
 
 ## Features
 
-- **Complete Hyprland setup** with waybar, wofi, dunst, swaylock
+- **Complete Hyprland setup** with waybar, rofi, dunst, hyprlock
 - **Full app suite** - Steam, Discord, VS Code, Unity Hub, OBS, VLC, Krita, Bottles
-- **Pywal theming** with automatic color generation
+- **Pywal theming** with automatic color generation for terminal
 - **Zsh with Oh My Zsh** + Powerlevel10k + plugins
-- **eww** built from source for advanced widgets
-- **Complete .config backup** - everything is preserved
+- **eww** built from source for widgets like the clock or player
 
 ## Installation
 
