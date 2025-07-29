@@ -140,7 +140,6 @@ MEDIA_PACKAGES=(
     "vlc"
     "obs-studio"
     "krita"
-    "gimp"
     "audacity"
     "ffmpeg"
     "wine"

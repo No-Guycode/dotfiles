@@ -1,0 +1,89 @@
+<!-- templates/meme_index.html -->
+<html>
+<head>
+    <title>Meme Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30;url=http://localhost:5000/">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .meme-container {
+            margin: 20px 0;
+        }
+        .meme-img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .error-msg {
+            color: red;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .loading {
+            color: #666;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>A website to gather some Memes!</h1>
+    <p>Here is your meme</p>
+    
+    <div class="meme-container">
+        <img src="{{meme_pic}}" 
+             alt="{{title}}" 
+             class="meme-img"
+             onload="hideError()" 
+             onerror="showError(this)">
+        <div id="error-msg" class="error-msg" style="display:none;">
+            Image failed to load. <a href="/">Try another meme!</a>
+        </div>
+        <div id="loading" class="loading">Loading meme...</div>
+    </div>
+    
+    <h2>Current Subreddit: {{subreddit}}</h2>
+    <h3>Title: {{title}}</h3>
+    <p><a href="/">Get another meme!</a></p>
+    
+    <script>
+        function showError(img) {
+            document.getElementById('error-msg').style.display = 'block';
+            document.getElementById('loading').style.display = 'none';
+            img.style.display = 'none';
+        }
+        
+        function hideError() {
+            document.getElementById('error-msg').style.display = 'none';
+            document.getElementById('loading').style.display = 'none';
+        }
+        
+        // Show loading initially
+        window.onload = function() {
+            document.getElementById('loading').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
+
+<!-- templates/error.html -->
+<html>
+<head>
+    <title>Meme Website - Error</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Oops! Something went wrong</h1>
+    <p>{{error_message}}</p>
+    <p><a href="/">Try again</a></p>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!-- templates/meme_index.html -->
+<html>
+<head>
+    <title>Meme Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30;url=http://localhost:5000/">
+</head>
+<body>
+    <h1>A website to gather some Memes!</h1>
+    <p>Here is your meme</p>
+    <p><img src="{{meme_pic}}" alt="{{title}}" style="max-width: 100%; height: auto;"></p>
+    <h2>Current Subreddit: {{subreddit}}</h2>
+    <h3>Title: {{title}}</h3>
+    <p><a href="/">Get another meme!</a></p>
+</body>
+</html>
+
+<!-- templates/error.html -->
+<html>
+<head>
+    <title>Meme Website - Error</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>Oops! Something went wrong</h1>
+    <p>{{error_message}}</p>
+    <p><a href="/">Try again</a></p>
+</body>
+</html>
