@@ -14,7 +14,7 @@ NC='\033[0m'
 
 DOTFILES_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-echo -e "${PURPLE}🌾 Installing dotfiles and all essential apps...${NC}"
+echo -e "${PURPLE}🌾 Installing all essential apps and dotfiles...${NC}"
 
 # Function to create symlinks
 create_symlink() {
@@ -35,7 +35,7 @@ create_symlink() {
 echo -e "${BLUE}Updating package lists...${NC}"
 sudo apt update
 
-# Install essential packages
+# Install essential packages first
 echo -e "${BLUE}Installing essential packages...${NC}"
 ESSENTIAL_PACKAGES=(
     "git"
@@ -88,10 +88,9 @@ for package in "${ESSENTIAL_PACKAGES[@]}"; do
     fi
 done
 
-# Install Hyprland and related tools
-echo -e "${BLUE}Installing Hyprland ecosystem...${NC}"
-HYPRLAND_PACKAGES=(
-    "hyprland"
+# Install Wayland/Hyprland ecosystem tools (without Hyprland itself)
+echo -e "${BLUE}Installing Wayland ecosystem and utilities...${NC}"
+WAYLAND_PACKAGES=(
     "xdg-desktop-portal-hyprland"
     "waybar"
     "wofi"
@@ -125,7 +124,7 @@ HYPRLAND_PACKAGES=(
     "qt6ct"
 )
 
-for package in "${HYPRLAND_PACKAGES[@]}"; do
+for package in "${WAYLAND_PACKAGES[@]}"; do
     if dpkg -l | grep -q "^ii  $package "; then
         echo -e "${GREEN}$package is already installed${NC}"
     else
@@ -134,17 +133,14 @@ for package in "${HYPRLAND_PACKAGES[@]}"; do
     fi
 done
 
-# Install media and gaming
+# Install media and gaming packages (no duplicates with Flatpak)
 echo -e "${BLUE}Installing media and gaming packages...${NC}"
 MEDIA_PACKAGES=(
-    "vlc"
-    "obs-studio"
-    "krita"
-    "audacity"
     "ffmpeg"
     "wine"
     "winetricks"
     "lutris"
+    "audacity"
 )
 
 for package in "${MEDIA_PACKAGES[@]}"; do
@@ -156,45 +152,35 @@ for package in "${MEDIA_PACKAGES[@]}"; do
     fi
 done
 
+# Install Unity Hub (corrected installation process)
+echo -e "${BLUE}Installing Unity Hub...${NC}"
+if ! command -v unityhub &> /dev/null; then
+    echo -e "${YELLOW}Adding Unity Hub signing key...${NC}"
+    wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
+    
+    echo -e "${YELLOW}Adding Unity Hub repository...${NC}"
+    sudo sh -c 'echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" > /etc/apt/sources.list.d/unityhub.list'
+    
+    echo -e "${YELLOW}Updating package cache and installing Unity Hub...${NC}"
+    sudo apt update
+    sudo apt-get install -y unityhub
+    
+    echo -e "${GREEN}✅ Unity Hub installed successfully${NC}"
+else
+    echo -e "${GREEN}Unity Hub is already installed${NC}"
+fi
+
 # Install pywal
 echo -e "${BLUE}Installing pywal...${NC}"
-pipx install pywal || pip3 install --user pywal
-
-# Install Oh My Zsh
-echo -e "${BLUE}Installing Oh My Zsh...${NC}"
-if [ ! -d "$HOME/.oh-my-zsh" ]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
-fi
-
-# Install Powerlevel10k
-echo -e "${BLUE}Installing Powerlevel10k...${NC}"
-if [ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
-    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
-fi
-
-# Install zsh plugins
-echo -e "${BLUE}Installing zsh plugins...${NC}"
-ZSH_PLUGINS=(
-    "https://github.com/zsh-users/zsh-autosuggestions.git"
-    "https://github.com/zsh-users/zsh-syntax-highlighting.git"
-    "https://github.com/zsh-users/zsh-history-substring-search.git"
-)
-
-for plugin in "${ZSH_PLUGINS[@]}"; do
-    plugin_name=$(basename "$plugin" .git)
-    if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/$plugin_name" ]; then
-        git clone "$plugin" "$HOME/.oh-my-zsh/custom/plugins/$plugin_name"
-    fi
-done
-
-# Change default shell to zsh
-echo -e "${BLUE}Setting zsh as default shell...${NC}"
-if [ "$SHELL" != "/bin/zsh" ] && [ "$SHELL" != "/usr/bin/zsh" ]; then
-    chsh -s $(which zsh)
+if ! command -v wal &> /dev/null; then
+    pipx install pywal || pip3 install --user pywal
+    echo -e "${GREEN}✅ pywal installed successfully${NC}"
+else
+    echo -e "${GREEN}pywal is already installed${NC}"
 fi
 
 # Install Flatpak apps
-echo -e "${BLUE}Installing Flatpak apps...${NC}"
+echo -e "${BLUE}Setting up Flatpak and installing apps...${NC}"
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
 FLATPAK_APPS=(
@@ -213,24 +199,56 @@ FLATPAK_APPS=(
 )
 
 for app in "${FLATPAK_APPS[@]}"; do
-    echo -e "${YELLOW}Installing $app...${NC}"
-    sudo flatpak install -y flathub "$app" || echo -e "${RED}Failed to install $app${NC}"
+    if flatpak list | grep -q "$app"; then
+        echo -e "${GREEN}$app is already installed${NC}"
+    else
+        echo -e "${YELLOW}Installing $app...${NC}"
+        sudo flatpak install -y flathub "$app" || echo -e "${RED}Failed to install $app${NC}"
+    fi
 done
 
-# Install Unity Hub (if not already installed)
-echo -e "${BLUE}Installing Unity Hub...${NC}"
-if ! command -v unityhub &> /dev/null; then
-    wget -qO - https://hub.unity3d.com/linux/keys/public | gpg --dearmor | sudo tee /usr/share/keyrings/Unity_Technologies_ApS.gpg > /dev/null
-    echo "deb [signed-by=/usr/share/keyrings/Unity_Technologies_ApS.gpg] https://hub.unity3d.com/linux/repos/deb stable main" | sudo tee /etc/apt/sources.list.d/unityhub.list
-    sudo apt update
-    sudo apt install -y unityhub
+# Install Oh My Zsh and related tools
+echo -e "${BLUE}Installing Oh My Zsh...${NC}"
+if [ ! -d "$HOME/.oh-my-zsh" ]; then
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+    echo -e "${GREEN}✅ Oh My Zsh installed${NC}"
+else
+    echo -e "${GREEN}Oh My Zsh is already installed${NC}"
 fi
+
+# Install Powerlevel10k
+echo -e "${BLUE}Installing Powerlevel10k...${NC}"
+if [ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel10k" ]; then
+    git clone --depth=1 https://github.com/romkatv/powerlevel10k.git "$HOME/.oh-my-zsh/custom/themes/powerlevel10k"
+    echo -e "${GREEN}✅ Powerlevel10k installed${NC}"
+else
+    echo -e "${GREEN}Powerlevel10k is already installed${NC}"
+fi
+
+# Install zsh plugins
+echo -e "${BLUE}Installing zsh plugins...${NC}"
+ZSH_PLUGINS=(
+    "https://github.com/zsh-users/zsh-autosuggestions.git"
+    "https://github.com/zsh-users/zsh-syntax-highlighting.git"
+    "https://github.com/zsh-users/zsh-history-substring-search.git"
+)
+
+for plugin in "${ZSH_PLUGINS[@]}"; do
+    plugin_name=$(basename "$plugin" .git)
+    if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/$plugin_name" ]; then
+        git clone "$plugin" "$HOME/.oh-my-zsh/custom/plugins/$plugin_name"
+        echo -e "${GREEN}✅ $plugin_name installed${NC}"
+    else
+        echo -e "${GREEN}$plugin_name is already installed${NC}"
+    fi
+done
 
 # Build and install eww
 echo -e "${BLUE}Building eww from source...${NC}"
 if ! command -v eww &> /dev/null; then
     # Install Rust if not present
     if ! command -v cargo &> /dev/null; then
+        echo -e "${YELLOW}Installing Rust...${NC}"
         curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
         source "$HOME/.cargo/env"
     fi
@@ -240,107 +258,148 @@ if ! command -v eww &> /dev/null; then
     
     # Clone and build eww
     cd /tmp
+    if [ -d "eww" ]; then
+        rm -rf eww
+    fi
     git clone https://github.com/elkowar/eww.git
     cd eww
     cargo build --release --no-default-features --features x11
     sudo cp target/release/eww /usr/local/bin/
     cd "$DOTFILES_DIR"
     echo -e "${GREEN}✅ eww installed successfully${NC}"
+else
+    echo -e "${GREEN}eww is already installed${NC}"
 fi
 
-# Create symlinks for configs
-echo -e "${BLUE}Creating symlinks for configurations...${NC}"
+# Change default shell to zsh
+echo -e "${BLUE}Setting zsh as default shell...${NC}"
+if [ "$SHELL" != "/bin/zsh" ] && [ "$SHELL" != "/usr/bin/zsh" ]; then
+    chsh -s $(which zsh)
+    echo -e "${GREEN}✅ Default shell changed to zsh${NC}"
+else
+    echo -e "${GREEN}Zsh is already the default shell${NC}"
+fi
 
-# Entire .config directory
+echo -e "${PURPLE}📁 Now copying configurations and assets...${NC}"
+
+# Copy .config contents
 if [ -d "$DOTFILES_DIR/.config" ]; then
-    create_symlink "$DOTFILES_DIR/.config" "$HOME/.config"
+    echo -e "${BLUE}Copying .config directory contents...${NC}"
+    mkdir -p "$HOME/.config"
+    cp -r "$DOTFILES_DIR/.config"/* "$HOME/.config/" 2>/dev/null || true
+    echo -e "${GREEN}✅ Configuration files copied${NC}"
 fi
 
-# Shell configs
+# Copy shell configs
+echo -e "${BLUE}Copying shell configuration files...${NC}"
 if [ -f "$DOTFILES_DIR/.zshrc" ]; then
-    create_symlink "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
+    cp "$DOTFILES_DIR/.zshrc" "$HOME/.zshrc"
+    echo -e "${GREEN}✅ .zshrc copied${NC}"
 fi
 
 if [ -f "$DOTFILES_DIR/.bashrc" ]; then
-    create_symlink "$DOTFILES_DIR/.bashrc" "$HOME/.bashrc"
+    cp "$DOTFILES_DIR/.bashrc" "$HOME/.bashrc"
+    echo -e "${GREEN}✅ .bashrc copied${NC}"
 fi
 
 if [ -f "$DOTFILES_DIR/.profile" ]; then
-    create_symlink "$DOTFILES_DIR/.profile" "$HOME/.profile"
+    cp "$DOTFILES_DIR/.profile" "$HOME/.profile"
+    echo -e "${GREEN}✅ .profile copied${NC}"
 fi
 
 if [ -f "$DOTFILES_DIR/.xinitrc" ]; then
-    create_symlink "$DOTFILES_DIR/.xinitrc" "$HOME/.xinitrc"
+    cp "$DOTFILES_DIR/.xinitrc" "$HOME/.xinitrc"
+    echo -e "${GREEN}✅ .xinitrc copied${NC}"
 fi
 
 if [ -f "$DOTFILES_DIR/.Xresources" ]; then
-    create_symlink "$DOTFILES_DIR/.Xresources" "$HOME/.Xresources"
+    cp "$DOTFILES_DIR/.Xresources" "$HOME/.Xresources"
+    echo -e "${GREEN}✅ .Xresources copied${NC}"
 fi
 
 if [ -f "$DOTFILES_DIR/.tmux.conf" ]; then
-    create_symlink "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
+    cp "$DOTFILES_DIR/.tmux.conf" "$HOME/.tmux.conf"
+    echo -e "${GREEN}✅ .tmux.conf copied${NC}"
 fi
 
 if [ -f "$DOTFILES_DIR/.gitconfig" ]; then
-    create_symlink "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+    cp "$DOTFILES_DIR/.gitconfig" "$HOME/.gitconfig"
+    echo -e "${GREEN}✅ .gitconfig copied${NC}"
 fi
 
 if [ -f "$DOTFILES_DIR/.aliases" ]; then
-    create_symlink "$DOTFILES_DIR/.aliases" "$HOME/.aliases"
+    cp "$DOTFILES_DIR/.aliases" "$HOME/.aliases"
+    echo -e "${GREEN}✅ .aliases copied${NC}"
 fi
 
 if [ -f "$DOTFILES_DIR/.vimrc" ]; then
-    create_symlink "$DOTFILES_DIR/.vimrc" "$HOME/.vimrc"
+    cp "$DOTFILES_DIR/.vimrc" "$HOME/.vimrc"
+    echo -e "${GREEN}✅ .vimrc copied${NC}"
 fi
 
 if [ -f "$DOTFILES_DIR/.p10k.zsh" ]; then
-    create_symlink "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
+    cp "$DOTFILES_DIR/.p10k.zsh" "$HOME/.p10k.zsh"
+    echo -e "${GREEN}✅ .p10k.zsh copied${NC}"
 fi
 
-# Install scripts
+# Copy scripts
 if [ -d "$DOTFILES_DIR/scripts" ]; then
-    echo -e "${BLUE}Installing scripts...${NC}"
+    echo -e "${BLUE}Copying scripts...${NC}"
     mkdir -p "$HOME/.local/bin"
     for script in "$DOTFILES_DIR/scripts"/*; do
         if [ -f "$script" ]; then
-            create_symlink "$script" "$HOME/.local/bin/$(basename "$script")"
+            cp "$script" "$HOME/.local/bin/$(basename "$script")"
             chmod +x "$HOME/.local/bin/$(basename "$script")"
+            echo -e "${GREEN}✅ $(basename "$script") copied and made executable${NC}"
         fi
     done
 fi
 
 # Copy wallpapers
 if [ -d "$DOTFILES_DIR/wallpapers" ]; then
-    echo -e "${BLUE}Installing wallpapers...${NC}"
+    echo -e "${BLUE}Copying wallpapers...${NC}"
     mkdir -p "$HOME/Pictures/wallpapers"
     cp -r "$DOTFILES_DIR/wallpapers"/* "$HOME/Pictures/wallpapers/" 2>/dev/null || true
+    echo -e "${GREEN}✅ Wallpapers copied${NC}"
 fi
 
-# Install fonts
+# Copy fonts
 if [ -d "$DOTFILES_DIR/fonts" ]; then
-    echo -e "${BLUE}Installing fonts...${NC}"
+    echo -e "${BLUE}Copying fonts...${NC}"
     mkdir -p "$HOME/.local/share/fonts"
     cp -r "$DOTFILES_DIR/fonts"/* "$HOME/.local/share/fonts/" 2>/dev/null || true
     fc-cache -fv
+    echo -e "${GREEN}✅ Fonts copied and cache updated${NC}"
 fi
 
-# Install themes
+# Copy icons
+if [ -d "$DOTFILES_DIR/icons" ]; then
+    echo -e "${BLUE}Copying icons...${NC}"
+    mkdir -p "$HOME/.local/share/icons"
+    cp -r "$DOTFILES_DIR/icons"/* "$HOME/.local/share/icons/" 2>/dev/null || true
+    echo -e "${GREEN}✅ Icons copied${NC}"
+fi
+
+# Copy themes
 if [ -d "$DOTFILES_DIR/themes" ]; then
-    echo -e "${BLUE}Installing themes...${NC}"
+    echo -e "${BLUE}Copying themes...${NC}"
     mkdir -p "$HOME/.local/share/themes"
     cp -r "$DOTFILES_DIR/themes"/* "$HOME/.local/share/themes/" 2>/dev/null || true
+    echo -e "${GREEN}✅ Themes copied${NC}"
 fi
 
-# Restore pywal cache
+# Copy pywal cache
 if [ -d "$DOTFILES_DIR/pywal" ]; then
-    echo -e "${BLUE}Restoring pywal cache...${NC}"
+    echo -e "${BLUE}Copying pywal cache...${NC}"
     mkdir -p "$HOME/.cache"
     cp -r "$DOTFILES_DIR/pywal/wal" "$HOME/.cache/" 2>/dev/null || true
+    echo -e "${GREEN}✅ Pywal cache copied${NC}"
 fi
 
 # Set up environment variables
 echo -e "${BLUE}Setting up environment variables...${NC}"
-cat >> "$HOME/.profile" << 'EOL'
+if ! grep -q "# Hyprland environment variables" "$HOME/.profile" 2>/dev/null; then
+    cat >> "$HOME/.profile" << 'EOL'
 
 # Hyprland environment variables
 export XDG_CURRENT_DESKTOP=Hyprland
@@ -361,25 +420,32 @@ export PATH="$HOME/.local/bin:$PATH"
 # Pywal
 (cat ~/.cache/wal/sequences &)
 EOL
+    echo -e "${GREEN}✅ Environment variables added to .profile${NC}"
+else
+    echo -e "${GREEN}Environment variables already configured${NC}"
+fi
 
-# Create a welcome script
-echo -e "${BLUE}Creating welcome script...${NC}"
-cat > "$HOME/.local/bin/welcome" << 'EOL'
-#!/bin/bash
-echo "$(tput setaf 6)"
-cowsay "Welcome to your rice setup!" | lolcat
-echo "$(tput sgr0)"
-neofetch
-EOL
-chmod +x "$HOME/.local/bin/welcome"
 
-echo -e "${GREEN}✅ Full dotfiles installation complete!${NC}"
-echo -e "${YELLOW}Installed apps:${NC}"
-echo -e "  • Steam, Discord, VS Code, Unity Hub"
-echo -e "  • OBS Studio, VLC, Krita, Bottles"
-echo -e "  • Kitty, Zsh with Oh My Zsh + Powerlevel10k"
-echo -e "  • Pywal for theming"
-echo -e "  • eww (built from source)"
-echo -e "  • Cowsay and other fun tools"
-echo -e "${BLUE}Please reboot or log out and back in for all changes to take effect.${NC}"
-echo -e "${PURPLE}Run 'welcome' to see your new setup! 🎉${NC}"
+
+echo ""
+echo -e "${GREEN}🎉 Full dotfiles installation complete!${NC}"
+echo ""
+echo -e "${YELLOW}📦 Programs installed:${NC}"
+echo -e "  • ${BLUE}Gaming:${NC} Steam, Lutris, Wine (Bottles for Windows apps)"
+echo -e "  • ${BLUE}Development:${NC} VS Code (Flatpak), Unity Hub, Git"
+echo -e "  • ${BLUE}Media:${NC} VLC (Flatpak), OBS Studio (Flatpak), Krita (Flatpak), Audacity"
+echo -e "  • ${BLUE}Communication:${NC} Discord, Telegram, Firefox"
+echo -e "  • ${BLUE}Productivity:${NC} LibreOffice, Spotify"
+echo -e "  • ${BLUE}Utilities:${NC} Flameshot, Thunar, File Manager"
+echo -e "  • ${BLUE}Wayland Tools:${NC} Waybar, Wofi, Rofi, Dunst, Swaylock (Hyprland-ready)"
+echo -e "  • ${BLUE}Terminal:${NC} Kitty with Zsh + Oh My Zsh + Powerlevel10k"
+echo -e "  • ${BLUE}Theming:${NC} Pywal for automatic color generation"
+echo -e "  • ${BLUE}Widgets:${NC} eww (built from source)"
+echo ""
+echo -e "${BLUE}📋 Next steps:${NC}"
+echo -e "  1. ${YELLOW}Reboot${NC} or log out and back in"
+echo -e "  2. ${YELLOW}Install Hyprland manually${NC} when ready: 'sudo apt install hyprland'"
+echo -e "  3. Start Hyprland with ${YELLOW}'Hyprland'${NC} command"
+echo -e "  4. Generate pywal theme: ${YELLOW}'wal -i ~/Pictures/wallpapers/yourwallpaper.jpg'${NC}"
+echo ""
+echo -e "${PURPLE}🌾 Enjoy your new rice! 🎉${NC}"
